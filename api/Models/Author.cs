@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 
+
 namespace Fisher.Bookstore.Models
 {
     public class Author 
@@ -10,5 +11,11 @@ namespace Fisher.Bookstore.Models
         public string Bio { get; set; }
 
         public List<Book> Titles { get; set; }
+        
+         public static implicit operator string(Author v)
+        {
+            //throw new NotImplementedException();
+            return null;
+        } 
     }
 }
